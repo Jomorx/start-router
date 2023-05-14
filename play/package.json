@@ -1,5 +1,5 @@
 {
-  "name": "play",
+  "name": "@start-router/play",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "start-router": "workspace:^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
