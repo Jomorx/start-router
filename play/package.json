@@ -10,7 +10,8 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "start-router": "workspace:^0.0.0"
+    "start-router": "workspace:^0.0.0",
+    "start-router-react": "workspace:^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

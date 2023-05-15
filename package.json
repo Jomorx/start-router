@@ -3,6 +3,9 @@
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "dev":"pnpm --filter @start-router/play dev"
+        "dev": "pnpm --filter @start-router/play dev"
+    },
+    "devDependencies": {
+        "@types/node": "^20.1.4"
     }
-  }
+}

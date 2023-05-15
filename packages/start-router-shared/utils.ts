@@ -1,3 +1,4 @@
+import * as path from "path"
 export const getTrailPath = (basename: string, pathname: string) => {
   if (basename === "/") return pathname;
    /**
@@ -16,3 +17,8 @@ export const getTrailPath = (basename: string, pathname: string) => {
 
   return pathname.slice(basename.length) || "/";
 };
+
+// https://example.com//path//to//file.html => https:/example.com/path/to/file.html
+export const joinPaths = (...args:string[])=>{
+  return args.join("").replace(/\/\/+/g, "/");
+}

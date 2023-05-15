@@ -3,7 +3,10 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      '@types/node': ^20.1.4
+    devDependencies:
+      '@types/node': 20.1.4
 
   packages/start-router:
     specifiers:
@@ -12,6 +15,14 @@ importers:
     dependencies:
       history: 5.3.0
       start-router-shared: link:../start-router-shared
+
+  packages/start-router-react:
+    specifiers:
+      '@types/react': ^18.0.0
+      react: ^18.0.0
+    dependencies:
+      '@types/react': 18.2.6
+      react: 18.2.0
 
   packages/start-router-shared:
     specifiers:
@@ -27,12 +38,14 @@ importers:
       react: ^18.0.0
       react-dom: ^18.0.0
       start-router: workspace:^0.0.0
+      start-router-react: workspace:^0.0.0
       typescript: ^4.6.3
       vite: ^2.9.15
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       start-router: link:../packages/start-router
+      start-router-react: link:../packages/start-router-react
     devDependencies:
       '@types/react': 18.2.6
       '@types/react-dom': 18.2.4
@@ -368,9 +381,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@types/node/20.1.4:
+    resolution: {integrity: sha512-At4pvmIOki8yuwLtd7BNHl3CiWNbtclUbNtScGx4OHfBd4/oWoJC8KRCIxXwkdndzhxOsPXihrsOoydxBjlE9Q==}
+    dev: true
+
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
 
   /@types/react-dom/18.2.4:
     resolution: {integrity: sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==}
@@ -384,11 +400,9 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
-    dev: true
 
   /@types/scheduler/0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
-    dev: true
 
   /@vitejs/plugin-react/1.3.2:
     resolution: {integrity: sha512-aurBNmMo0kz1O4qRoY+FM4epSA39y3ShWGuqfLRA/3z0oEJAdtoSfgA3aO98/PCCHAqMaduLxIxErWrVKIFzXA==}
@@ -453,7 +467,6 @@ packages:
 
   /csstype/3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
-    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
